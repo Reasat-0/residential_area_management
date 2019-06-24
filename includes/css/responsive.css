@@ -1,0 +1,110 @@
+@media only screen and (max-width: 1200px){
+    .head-box{
+        padding: 0 3%;
+        width: 100%;
+    }
+    .row{
+        padding: 0 2%;
+    }
+    .fullhead{
+        margin-left: 1%;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1023px){
+    body{
+        font-size: 18px;
+    }
+    
+    .fullhead{
+    margin: 40px 5%;
+    }
+    
+    section{
+        padding: 20px 0;
+    }
+    
+    .feature_para {
+	width: 100%;
+	margin: 0 10%;
+}
+     .step:first-child{
+        margin-top: 10px;
+    }
+    .step:last-child{
+        margin-top: 20px;
+    }
+    .steps p{
+        text-align: center;
+    }
+    .logos{
+        
+        text-align: center;
+    }
+    
+    blockquote{
+        line-height: 25px;    
+    }
+    .form-edit{
+        width: 80%;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    textarea{
+    width: 100%;
+    padding: 7px;
+    }
+
+
+}
+
+/***********************************************************************/
+
+@media only screen and (max-width: 767px){
+    .main-nav{display: none;}
+    .logo{margin : 20px 35%;}
+    .fullhead .button{margin-left: -2%;}
+    .fullhead  h1{
+        font-size: 120%;
+        margin-top: 30px;
+        margin-left: -2%;
+    }
+    h2{ font-size: 100%;}
+    .feature_para {
+        text-align: center;
+        margin-left: 0%;}
+    .col{width: 100%;}
+    .box{
+        text-align: center;
+    }
+    .photo_box img{
+        height: 150px;
+    }
+    .step-two{
+        padding-left: 0%;
+    }
+    .logo-btn img
+    {
+        margin-left: 0;
+    }
+   .box img{
+    width: 50%;
+    height: auto;
+    margin-bottom:10px;
+    border-radius: 50%;
+}
+    .phoneimg{
+         width: 80%;
+        padding-left: 1%;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px){
+
+}
+    

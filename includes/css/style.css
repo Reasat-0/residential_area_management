@@ -1,0 +1,361 @@
+
+/*-----------------------------------------Formatting all element-------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*Helps to fix up the actual element*/
+/*	border: 1px solid blue;
+*/}
+
+html,body
+{
+	color : #555;
+	font-family: 'Lato', 'Arial' , sans-serif;
+/*	text-rendering: optimizeLegibility;
+*/	font-size: 20px;
+    overflow-x: hidden;
+}
+/*----------------------------------------Formatting HEADER--------------------------------------------*/
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(img/pexels-photo-731082.jpeg);
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+    background-attachment: fixed;
+}
+/*-------*/
+/*-----------------------------------------------Reusable----------------------------------------------*/
+.row
+{
+	margin: 0 auto;
+	max-width: 1140px;
+}
+section{
+	padding: 50px 0;
+}
+h1,h2,h3{
+	font-weight: 300;
+	text-transform: uppercase;
+
+}
+h1{
+	margin: 0;
+	font-size : 220%;
+	letter-spacing: 1px;
+	color: #fff;
+	word-spacing: 3px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+h2{
+	word-spacing: 2px;
+	font-size : 170%;
+	margin-bottom: 20px ;
+	letter-spacing: 1px;
+	text-align : center;
+}
+
+h2:after{
+	display: block;
+	height: 2px;
+	background-color:  #218c74;
+	content: " ";
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 200px;
+}
+h3{
+	font-size: 120%;
+	margin-bottom: 15px;
+}
+.box{
+    padding: 2% 0px;
+}
+.box p{
+	font-size:85%;
+	line-height: 170%;
+}
+.icon_edit{
+	font-size: 100px;
+	color:#218c74;
+}
+
+
+.feature_para {
+	width: 70%;
+	margin: 0 15%;
+	line-height: 145%;
+}
+
+/*--------------------------------------------The logo section---------------------------------------*/
+.logo{
+	height: 100px;
+	width: auto;
+	float: left;
+	border-radius: 500px;
+	margin-top: 40px;
+	opacity: 0.2;
+}
+.another-logo{
+    display: none;
+}
+
+/*------------------------------------------------Nav menu---------------------------------------------*/
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 50px;
+}
+.main-nav li{
+	display: inline-block;
+	margin-left: 40px;
+
+}
+.main-nav li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 80%;
+	border-bottom: 2px solid transparent;
+	
+	padding: 5px 0;
+}
+.main-nav li a:hover
+{
+	border-bottom: 3px solid #218c74;
+	text-shadow: 1px;
+	transition: border-bottom 0.2s;
+
+}
+/******Mobile Nav********/
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i{
+    font-size: 180%;
+    color: #fff;
+   
+}
+/****Sticky Nav***************/
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(54, 51, 51, 0.65);
+    height: 80px;
+    z-index: 9999;  /*** It keeps the elements on top over other elements *****/
+}
+.sticky .main-nav{
+    margin-top : 20px;
+}
+.sticky .main-nav li a{
+	padding: 5px 0;
+    color: #fff;
+}
+
+.sticky .another-logo{
+    display: block;
+	height: 70px;
+	width: 70px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 5px;
+}
+.sticky .logo{
+    display : none;
+}
+/*---------------------------------------------------Main header------------------------------------------*/
+.fullhead{
+	position: absolute;
+	width: 1140px;
+	top: 30%;
+	left: 15%;
+	/*transform: translate(-50% ,-50%);*/
+}
+/*------Formatting HEADING--------*/
+
+/*--------------------------------------Formatting BUTTONS----------------------------------------------*/
+.btn,
+input[type=submit]{
+	display: inline-block;
+	padding: 10px 55px;
+	text-decoration: none;
+	border-radius: 200px;
+	color: #fff;
+	margin: 0px 10px;
+	transition: background-color 0.7s;
+
+
+}
+.btn1:link,
+.btn1:visited{
+	border: 1px solid #218c74;
+
+}
+.btn2:hover
+{
+	opacity: 0.8;
+}
+.btn2:link,
+.btn2:visited,
+input[type=submit]{
+	background-color: #218c74;
+	border: 1px solid #218c74;
+	
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover{
+	background-color: #1b715d;
+	box-shadow: 1px 1px 1px;
+	/*transition: background-color 0.2s;*/
+
+}
+
+/*--------------------------------------SECTION NEW------------------------------------------*/
+
+.new_photos{
+	list-style: none;
+	width: 100%;
+}
+.clear{
+    zoom:1;
+}
+.clear::after{
+    display: block;
+    visibility: hidden;
+    content: '.';
+    clear:both;
+    height: 0;
+}
+.new_photos li{
+	float: left;
+	width: 25%;
+	display: block;
+}
+.photo_box{
+	margin: 0;
+	width : 100%;
+	background-color: #000;
+    text-align: center;
+/*	border-radius : 500px;
+	/*margin : 50px 50px;*/
+    overflow: hidden;
+}
+
+.photo_box img
+{
+	width :100%;
+	height :300px;
+/*  height: auto;*/
+	transform: scale(1.35);
+	opacity: 0.4;
+}
+.photo_box img:hover
+{
+	transition: transform 0.5s,opacity 0.5s;
+	transform: scale(1);
+	opacity: 1;
+}
+/***********************
+------------HOw it works----------
+--------------------------------------*/
+.step:first-child{
+    text-align:right;
+    padding-right: 4%;
+    margin-top: 50px;   
+}
+.step:last-child{
+   padding-left: 4%;
+    margin-top:105px
+}
+.phoneimg{
+    width: 100%;
+    height: auto;
+}
+.steps{
+    margin-bottom: 35px;
+    
+}
+.steps div{
+    border: 1px solid black;
+    border-radius:50%;
+    height: 40px;
+    width: 40px;
+    padding: 6px 12px;
+    display: inline-block;
+    float: left;
+    margin-right: 25px;   
+}
+.logo-btn img{
+    width: 30%;
+    height: 40px;
+    margin-left: 20px;
+}
+
+/*********************************************************
+-----------CITIES---------------------------------------
+*******************************************************/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom:10px;
+    border-radius: 50%;
+}
+
+.city_features{
+    margin-bottom: 5px;
+}
+.fb{
+    color: #4267B2;
+}
+.icon-small{
+    /*color: #218c74;*/
+    font-size: 120%;
+    margin-right: 5px;
+}
+section{
+    background-color:rgb(242, 244, 247);
+}
+.customer-opinions{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(img/pexels-photo-731082.jpeg);
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.52);
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 120%;
+}
+cite{
+    margin-top: 20px;
+    font-size: 80%;
+    display: block;
+   
+}
+.cust_img img{
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    padding-top : 10px;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+.form-edit{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=name],
+input[type=email],
+input[type=password],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+}
